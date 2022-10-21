@@ -1,12 +1,20 @@
 @import url(./reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
   * {
     text-decoration: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 1px solid red;
   }
 .container {
     padding: 2.8rem 7.03rem 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .header {
@@ -92,5 +100,109 @@
 @media(max-width:768px) {
     .container {
         padding: 1rem 2.3rem;
+    }
+}
+
+
+/* INTRODUCTION SECTION */
+
+.introduction{
+    display: flex;
+    max-width: 1215px;
+    flex-wrap: wrap;
+    
+}
+
+.intro-left {
+    flex-basis: 60%;
+    padding-top: 117px;
+    /* min-width: 647px; */
+}
+
+
+.intro-left h1 {
+    font-size: 72px;
+    font-weight: 700;
+    
+
+}
+
+.intro-left p  {
+    margin-top: 34px;
+}
+
+.bookacall {
+    margin-top: 34px;
+
+    display: flex;
+    align-items: center;
+    
+}
+
+.bookacall button {
+    width: 141px;
+    height: 48px;
+
+    background-color: #000;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.intro-right {
+    flex:1;
+    padding-top: 70px;
+    min-width: 350px;
+}
+
+.intro-right img {
+    width: 100%;
+   
+}
+
+
+@media(max-width:1247px) {
+    .container {
+        padding-right: 0;
+    }
+
+
+}
+
+@media(max-width:1132px) {
+
+    .introduction {
+        padding: 20px;
+    }
+
+
+    .intro-left {
+        /* flex-basis: 40%; */
+        flex-basis: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-left h1 {
+        text-align: center;
+        width: 90%;
+        font-size: 54px;
+   
+    }
+
+    .intro-left p {
+        width: 90%;
+        text-align: justify;
+        text-indent: 25px;
+    }
+
+    .bookacall {
+        width: 70%;
+        
+    }
+
+    .intro-right {
+        flex-basis: 50%;
     }
 }
