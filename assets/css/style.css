@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
   }
 .container {
     padding: 2.8rem 7.03rem 0;
@@ -204,5 +204,46 @@ body {
 
     .intro-right {
         flex-basis: 50%;
+    }
+}
+
+
+/* PARTNYOR SHIRKETLER */
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.partners h4 {
+    text-align: center;
+}
+
+.partners-company {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+@media(max-width:768px) and (min-width:576px) {
+    /* .company:nth-child(1),
+    .company:nth-child(2) {
+        display: none;
+    } */
+
+
+    .company:nth-child(odd) {
+        display: none;
+    }
+
+}
+
+
+@media(max-width:576px) {
+    .company:not(:first-child) {
+        display: none;
     }
 }
